@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couchly Home Décor</title>
+    <link rel="stylesheet" href="../index/index.css">
+    <link rel="stylesheet" href="../index/resp.css">
+    <link rel="stylesheet" href="../delivery/shop.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class= "logo"><img src="../images/logo.jpg" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product1"></a>
+                <div class="dropdown">
+                    <button class="dropbtn">Store</button>
+                    <div class="dropdown-content">
+                      <a href="#product1">Sofas</a> <br>
+                      <a href="#product2">Chair/Table</a> <br>
+                      <a href="#product3">Storage</a>
+                    </div>
+                  </div>
+            </li>
+            <li><a href="#homedelivery" onclick="window.location.href='../delivery/cart.html'">Delivery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="&#128270 Search..."></input>
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection" id="home">
+        <div class="box-main">
+            <div class="firsthHalf">
+                <p class="text-big">Furniture Reselling Made Easy!</p> 
+                <p class="text-small">Providing a wide variety of high quality and unique furniture options at affordable prices to elevate interior spaces</p>
+                <div class="buttons" id="user">
+                    <button class="btn" id="user1">LOG IN</button>
+                    <button class="btn" id="user2">SIGN UP</button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="..images/logo2.jpg" alt="Startup Logo">
+            </div>
+        </div>
+
+        <div class="login-form" id="login">
+            <form action="">
+                <h2>Sign Up To Continue</h2>
+                <input type="text" name="" id="" placeholder="Enter Name..." required>
+                <input type="number" name="" id="" placeholder="Enter Phone..." required>
+                <input type="email" name="" id="" placeholder="Enter Email..." required>
+                <input type="password" name="" id="" placeholder="Enter Password..." required>
+                <input type="Submit" value="Sign Up" class="button">
+                <p>Forgot Password? &nbsp; <a href="https://www.youtube.com/watch?v=Eer3YnRx_d8">Reset Now</a></p>
+                <p>Already Have Account? &nbsp; <a href="login.html">Login Now</a></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="../index/resp.js"></script>
+</body>
+</html>
